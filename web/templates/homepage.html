@@ -1,0 +1,17 @@
+<section class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+  <header class="px-5 py-4 border-b border-gray-100 bg-gradient-to-r from-gray-50 to-white">
+    <div class="flex items-center justify-between gap-4">
+      <div>
+        <p class="text-sm text-gray-500">日报</p>
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-900">{{date}}</h1>
+      </div>
+      {{latest_badge}}
+    </div>
+  </header>
+  <div class="px-5 py-3 text-sm text-gray-500 border-b border-gray-100">
+    {{item_count}}{{item_label}}
+  </div>
+  <div class="p-5 space-y-4">
+    {{report_content}}
+  </div>
+</section>

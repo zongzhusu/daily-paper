@@ -1,0 +1,1 @@
+{"date": "2026-02-18", "items": [{"title": "ASIC co-design for LLM inference", "topic": "芯片与硬件架构", "translated_zh": "通过编译器与硬件协同优化降低推理延迟。", "id": "arxiv:2502.12345"}, {"title": "HBM-aware scheduling", "topic": "芯片与硬件架构", "translated_zh": "针对高带宽内存的任务调度策略。", "url": "https://arxiv.org/abs/2502.54321"}]}

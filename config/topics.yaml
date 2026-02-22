@@ -1,0 +1,12 @@
+topics:
+  - name: 芯片与硬件架构
+    primary_categories: [cs.AR]
+    keyword_hints: [asic, fpga, chip, chiplet, accelerator, hbm]
+  - name: 模型与学习算法
+    primary_categories: [cs.AI, cs.LG, cs.NE]
+  - name: 多模态与感知
+    primary_categories: [cs.CV, cs.CL, eess.IV, eess.AS]
+  - name: Agent与推理范式
+    primary_categories: [cs.MA, cs.AI]
+  - name: 评测、安全与对齐
+    primary_categories: [cs.CR, cs.AI]

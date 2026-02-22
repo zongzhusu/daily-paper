@@ -1,0 +1,18 @@
+<aside class="hidden md:flex md:w-64 md:flex-col border-r border-gray-200 bg-white">
+  <div class="p-5 border-b border-gray-200 bg-gradient-to-r from-indigo-50 to-white">
+    <a href="index.html" class="text-xl font-bold tracking-tight">
+      <span class="text-indigo-600">{{brand}}</span>
+    </a>
+    <p class="text-xs text-gray-500 mt-1">{{brand_zh}}</p>
+  </div>
+  <nav class="p-3 flex-1 overflow-y-auto">
+    <p class="text-xs uppercase tracking-wider text-gray-400 px-2 mb-2">最近更新</p>
+    <ul class="space-y-1">
+      {{recent_reports}}
+    </ul>
+    <p class="text-xs uppercase tracking-wider text-gray-400 px-2 mt-5 mb-2">归档</p>
+    <ul>
+      <li><a class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100" href="archive.html">查看全部日报</a></li>
+    </ul>
+  </nav>
+</aside>

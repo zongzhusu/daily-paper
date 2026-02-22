@@ -1,0 +1,13 @@
+timezone: Asia/Shanghai
+publish_time: "08:30"
+
+stages:
+  - collect
+  - score
+  - curate
+  - render
+  - build
+
+quality_gates:
+  require_pdf_url: true
+  max_translated_chars: 300
