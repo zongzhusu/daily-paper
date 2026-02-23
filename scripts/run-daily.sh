@@ -20,6 +20,12 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$PROJECT_ROOT"
+
+mkdir -p output .tmp output/site
+
 echo "[daily-paper] run pipeline for ${RUN_DATE}"
 echo "[daily-paper] mode: ${MODE}"
-echo "[daily-paper] stages: collect -> score -> curate -> render -> build"
+
+python3 -m pipeline.run_daily --date "$RUN_DATE" --mode "$MODE"

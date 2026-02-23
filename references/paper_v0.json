@@ -1,0 +1,24 @@
+{
+  "mode": "paper_v0",
+  "source": "arxiv",
+  "sourceType": "paper",
+  "arxiv": {
+    "endpoint": "http://export.arxiv.org/api/query",
+    "sortBy": "submittedDate",
+    "sortOrder": "descending",
+    "search": {
+      "kind": "category",
+      "categories": ["cs.AI", "cs.LG", "cs.CL", "cs.SE", "cs.DC", "cs.CR", "cs.IR"],
+      "query": null
+    },
+    "page": {
+      "start": 0,
+      "maxResults": 50
+    }
+  },
+  "normalize": {
+    "idTemplate": "arxiv:{arxivId}",
+    "urlTemplate": "https://arxiv.org/abs/{arxivId}",
+    "includeRaw": true
+  }
+}
