@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-24",
+  "items": [
+    {
+      "title": "The Geometry of Noise: Why Diffusion Models Don't Need Noise Conditioning",
+      "topic": "多模态与感知",
+      "score": 88,
+      "translated_zh": "这篇文章在扩散模型领域提供了一个重要的理论贡献，解释了扩散模型能自动判断噪声水平并优化的机理。",
+      "arxiv_id": "2602.18428v1",
+      "abs_url": "https://arxiv.org/abs/2602.18428v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.18428v1.pdf"
+    },
+    {
+      "title": "RVR: Retrieve-Verify-Retrieve for Comprehensive Question Answering",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "该研究提出的RVR框架通过迭代检索验证的方式，显著提升了问题回答覆盖率，属于AI领域中的一个显著进步。",
+      "arxiv_id": "2602.18425v1",
+      "abs_url": "https://arxiv.org/abs/2602.18425v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.18425v1.pdf"
+    },
+    {
+      "title": "SPQ: An Ensemble Technique for Large Language Model Compression",
+      "topic": "多模态与感知",
+      "score": 87,
+      "translated_zh": "结合三种技术实现的大型语言模型压缩，取得明显的性能提升和内存减少。",
+      "arxiv_id": "2602.18420v1",
+      "abs_url": "https://arxiv.org/abs/2602.18420v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.18420v1.pdf"
+    }
+  ]
+}

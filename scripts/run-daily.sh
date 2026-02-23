@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_DATE="$(date +%F)"
+RUN_DATE="$(TZ=Asia/Shanghai date +%F)"
 MODE="paper"
 
 while [[ $# -gt 0 ]]; do
@@ -23,9 +23,9 @@ done
 PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$PROJECT_ROOT"
 
-mkdir -p output .tmp output/site
+mkdir -p output .tmp output/site logs references
 
 echo "[daily-paper] run pipeline for ${RUN_DATE}"
 echo "[daily-paper] mode: ${MODE}"
 
-python3 -m pipeline.run_daily --date "$RUN_DATE" --mode "$MODE"
+time python3 -m pipeline.run_daily --date "$RUN_DATE" --mode "$MODE"
