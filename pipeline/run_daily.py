@@ -160,26 +160,11 @@ def run_daily(run_date: str, *, mode: str = "paper") -> Path:
     score_out_path = paths.tmp_dir / f"score-result-{run_date}.json"
     write_json(score_req_path, score_req)
 
-    # Run news-scorer
-    proc2 = subprocess.run(
-        [
-            "node",
-            "/root/.openclaw/skills/news-scorer/scripts/score.mjs",
-            "--input",
-            str(score_req_path),
-        ],
-        cwd=str(root),
-        text=True,
-        capture_output=True,
-    )
-    if proc2.returncode != 0 and proc2.stdout.strip() == "":
-        raise RuntimeError(f"scorer failed with no json output\nstderr:\n{proc2.stderr}")
-    score_out_path.write_text(proc2.stdout, encoding="utf-8")
+    # Score items (reuse daily-report ContentProcessor)
+    from .score import score_items
 
-    score_result = load_scorer_output(str(score_out_path))
-    scored_items = score_result.get("items") if isinstance(score_result, dict) else None
-    if not isinstance(scored_items, list):
-        raise RuntimeError("unexpected scorer output (missing items list)")
+    scored_items = score_items(collected_items)
+    score_out_path.write_text(json.dumps({"mode": "score_py_v0", "items": scored_items}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     curated = curate_items(scored_items)
 
