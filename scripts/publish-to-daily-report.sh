@@ -38,20 +38,25 @@ log "sync ${PAPER_JSON_SRC} -> ${REPORT_JSON_DST}"
 mkdir -p "$REPORT_PAPERS_DIR"
 cp -f "$PAPER_JSON_SRC" "$REPORT_JSON_DST"
 
-log "rebuild daily-report web/dist"
-cd "$REPORT_REPO"
-node web/generate.js >/dev/null
-
 log "git commit+push daily-report"
-
 cd "$REPORT_REPO"
-# Always start clean to keep rebase/push reliable.
+
+# If repo is dirty before we touch it, auto-absorb the changes.
+# This avoids rebase/push failures caused by ignored-but-tracked dist files.
 if [[ -n "$(git status --porcelain=v1)" ]]; then
-  die "daily-report repo is dirty; please commit/stash first: ${REPORT_REPO}"
+  log "daily-report repo dirty; auto-absorbing changes"
+  git add -A
+  git add -f web/dist || true
+  if ! git diff --cached --quiet; then
+    git commit -m "chore: auto-absorb dirty state before publish" || true
+  fi
 fi
 
 # Rebase first to avoid push rejection.
 git pull --rebase origin master
+
+log "rebuild daily-report web/dist"
+node web/generate.js >/dev/null
 
 git add "$REPORT_JSON_DST"
 # web/dist is ignored by default
