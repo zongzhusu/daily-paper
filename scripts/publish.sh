@@ -47,3 +47,10 @@ git commit -m "chore: publish daily-paper site (${MODE})"
 git push
 
 echo "[daily-paper] publish complete (git push done)"
+
+# Optional: also publish into daily-report (Cloudflare Pages site) if available.
+# This keeps the "web view" in the daily-report Pages project updated.
+if [[ "${DAILY_PAPER_PUBLISH_TO_DAILY_REPORT:-0}" == "1" ]]; then
+  echo "[daily-paper] publish to daily-report (papers)"
+  bash scripts/publish-to-daily-report.sh "$(TZ=Asia/Shanghai date +%F)"
+fi
