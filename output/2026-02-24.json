@@ -2,94 +2,94 @@
   "date": "2026-02-24",
   "items": [
     {
-      "title": "The Geometry of Noise: Why Diffusion Models Don't Need Noise Conditioning",
+      "title": "A Very Big Video Reasoning Suite",
       "topic": "多模态与感知",
-      "score": 88,
-      "translated_zh": "文章提出了先进的噪声无关性生成模型，有机会在生成模型领域引起范式转变，对AI研究具有战略价值。",
-      "arxiv_id": "2602.18428v1",
-      "abs_url": "https://arxiv.org/abs/2602.18428v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18428v1.pdf"
+      "score": 95,
+      "translated_zh": "该文推动了视频推理领域的发展，提供了前所未有的大规模数据集和可验证的评估框架，可能引领视频理解和推理能力的进步。",
+      "arxiv_id": "2602.20159v1",
+      "abs_url": "https://arxiv.org/abs/2602.20159v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20159v1.pdf"
     },
     {
-      "title": "RVR: Retrieve-Verify-Retrieve for Comprehensive Question Answering",
-      "topic": "多模态与感知",
-      "score": 82,
-      "translated_zh": "文章提出了一种新的RVR(Retrieve-Verify-Retrieve)多轮检索框架，通过迭代优化策略显著提升了问答任务的答案召回率，对于提高自然语言处理任务的效果具有重要价值。",
-      "arxiv_id": "2602.18425v1",
-      "abs_url": "https://arxiv.org/abs/2602.18425v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18425v1.pdf"
-    },
-    {
-      "title": "SPQ: An Ensemble Technique for Large Language Model Compression",
-      "topic": "多模态与感知",
+      "title": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+      "topic": "评测、安全与对齐",
       "score": 87,
-      "translated_zh": "提出了结合SVD、剪枝和量化的技术SPQ用于大型语言模型压缩，效果优于单一方法，并在内存、速度上有明显提升，对产业有实际应用意义。",
-      "arxiv_id": "2602.18420v1",
-      "abs_url": "https://arxiv.org/abs/2602.18420v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18420v1.pdf"
+      "translated_zh": "识别并评估面向LLMs的技能文件攻击的新威胁，展示当前代理易受攻击且需改进安全性框架。",
+      "arxiv_id": "2602.20156v1",
+      "abs_url": "https://arxiv.org/abs/2602.20156v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20156v1.pdf"
     },
     {
-      "title": "Subgroups of $U(d)$ Induce Natural RNN and Transformer Architectures",
-      "topic": "多模态与感知",
-      "score": 81,
-      "translated_zh": "本文基于群论理论提出了一种统一的RNN和Transformer模型框架，通过选择不同的U(d)子群来生成不同的模型，提升了模型灵活性和性能。",
-      "arxiv_id": "2602.18417v1",
-      "abs_url": "https://arxiv.org/abs/2602.18417v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18417v1.pdf"
+      "title": "JUCAL: Jointly Calibrating Aleatoric and Epistemic Uncertainty in Classification Tasks",
+      "topic": "模型与学习算法",
+      "score": 89,
+      "translated_zh": "提出了一种新的不确定性校准算法，能够同时校准预测不确定性中的偶然性和认知性两部分，对于改进模型预测性能和减少计算成本具有重大意义。",
+      "arxiv_id": "2602.20153v1",
+      "abs_url": "https://arxiv.org/abs/2602.20153v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20153v1.pdf"
     },
     {
-      "title": "Unifying approach to uniform expressivity of graph neural networks",
+      "title": "Behavior Learning (BL): Learning Hierarchical Optimization Structures from Data",
       "topic": "模型与学习算法",
       "score": 87,
-      "translated_zh": "提出了一个统一框架来增强图神经网络的表达能力，与现有的GNN有等价的表达力。",
-      "arxiv_id": "2602.18409v1",
-      "abs_url": "https://arxiv.org/abs/2602.18409v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18409v1.pdf"
+      "translated_zh": "Behavior Learning (BL) 提出一种新的机器学习框架，从数据中学习层次化优化结构，具有模式识别和可解释性的特性，同时有望在更广泛的科学领域中应用。",
+      "arxiv_id": "2602.20152v1",
+      "abs_url": "https://arxiv.org/abs/2602.20152v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20152v1.pdf"
     },
     {
-      "title": "Latent Equivariant Operators for Robust Object Recognition: Promise and Challenges",
+      "title": "Conformal Risk Control for Non-Monotonic Losses",
+      "topic": "模型与学习算法",
+      "score": 68,
+      "translated_zh": "本文介绍了一种用于控制非单调损失风险的新方法，提供了多维参数风险控制的理论保证，并在多个应用场景下展示了其效果，虽然未给出具体的数值效果，但其提供了对现有算法风险控制的扩展和改进。",
+      "arxiv_id": "2602.20151v1",
+      "abs_url": "https://arxiv.org/abs/2602.20151v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20151v1.pdf"
+    },
+    {
+      "title": "Agentic AI for Scalable and Robust Optical Systems Control",
+      "topic": "模型与学习算法",
+      "score": 90,
+      "translated_zh": "AgentOptics在光学系统自动化控制领域实现了高效率和鲁棒性，其自定义的AI框架和任务成功率显著优于基线模型，展示了AI在特定复杂系统中的应用潜力。",
+      "arxiv_id": "2602.20144v1",
+      "abs_url": "https://arxiv.org/abs/2602.20144v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20144v1.pdf"
+    },
+    {
+      "title": "Recurrent Structural Policy Gradient for Partially Observable Mean Field Games",
+      "topic": "模型与学习算法",
+      "score": 82,
+      "translated_zh": "提出了一种新的算法RSPG，用于处理大型群体模型中的部分可观测性问题，并且是第一个针对公共信息设置的历史感知算法。",
+      "arxiv_id": "2602.20141v1",
+      "abs_url": "https://arxiv.org/abs/2602.20141v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20141v1.pdf"
+    },
+    {
+      "title": "AdaEvolve: Adaptive LLM Driven Zeroth-Order Optimization",
       "topic": "多模态与感知",
-      "score": 82,
-      "translated_zh": "该研究在模型与范式突破维度具有较高价值，探索了在计算机视觉领域处理对称变换的新算法，能够提升模型的泛化能力。",
-      "arxiv_id": "2602.18406v1",
-      "abs_url": "https://arxiv.org/abs/2602.18406v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18406v1.pdf"
+      "score": 90,
+      "translated_zh": "该研究提出了一个利用大型语言模型驱动的进化算法新框架，通过多层次自适应优化显著提高了解决各类优化问题的能力。",
+      "arxiv_id": "2602.20133v1",
+      "abs_url": "https://arxiv.org/abs/2602.20133v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20133v1.pdf"
     },
     {
-      "title": "PRISM-FCP: Byzantine-Resilient Federated Conformal Prediction via Partial Sharing",
+      "title": "LAD: Learning Advantage Distribution for Reasoning",
       "topic": "模型与学习算法",
-      "score": 72,
-      "translated_zh": "提出了一种防止联邦学习中拜占庭攻击的新框架，通过部分模型分享和统计边际的鲁棒校准对抗攻击，减少通信并提高预测区间的紧致性。",
-      "arxiv_id": "2602.18396v1",
-      "abs_url": "https://arxiv.org/abs/2602.18396v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18396v1.pdf"
+      "score": 78,
+      "translated_zh": "LAD通过学习优势分布来改善大型模型的推理能力，提升了多样性和泛化性能，对解决强化学习中过度依赖主导性奖励信号具有战略意义。",
+      "arxiv_id": "2602.20132v1",
+      "abs_url": "https://arxiv.org/abs/2602.20132v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20132v1.pdf"
     },
     {
-      "title": "Learning to Tune Pure Pursuit in Autonomous Racing: Joint Lookahead and Steering-Gain Control with PPO",
+      "title": "Adaptation to Intrinsic Dependence in Diffusion Language Models",
       "topic": "模型与学习算法",
-      "score": 82,
-      "translated_zh": "使用强化学习优化自动驾驶赛车中Pure Pursuit算法的参数调整，表现优于其他方法，具有战略意义",
-      "arxiv_id": "2602.18386v1",
-      "abs_url": "https://arxiv.org/abs/2602.18386v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18386v1.pdf"
-    },
-    {
-      "title": "FedZMG: Efficient Client-Side Optimization in Federated Learning",
-      "topic": "模型与学习算法",
-      "score": 85,
-      "translated_zh": "提出了一种新颖的优化算法FedZMG，通过解决联邦学习中的非独立同分布数据问题，在有限资源下提升了模型性能。",
-      "arxiv_id": "2602.18384v1",
-      "abs_url": "https://arxiv.org/abs/2602.18384v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18384v1.pdf"
-    },
-    {
-      "title": "Zero-shot Interactive Perception",
-      "topic": "模型与学习算法",
-      "score": 83,
-      "translated_zh": "ZS-IP结合先进感知技术与记忆驱动的VLM，通过多样的交互动作提升复杂环境中机器人的操控能力，推动交互式感知和机器学习的结合。",
-      "arxiv_id": "2602.18374v1",
-      "abs_url": "https://arxiv.org/abs/2602.18374v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.18374v1.pdf"
+      "score": 87,
+      "translated_zh": "提出了一种新的扩散语言模型中适应内在依赖性的unmasking方案，显著提升采样效率和收敛速度。",
+      "arxiv_id": "2602.20126v1",
+      "abs_url": "https://arxiv.org/abs/2602.20126v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20126v1.pdf"
     }
   ]
 }
