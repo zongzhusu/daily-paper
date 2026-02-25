@@ -1,0 +1,95 @@
+{
+  "date": "2026-02-26",
+  "items": [
+    {
+      "title": "Test-Time Training with KV Binding Is Secretly Linear Attention",
+      "topic": "多模态与感知",
+      "score": 87,
+      "translated_zh": "本文提出了一种新的视角来理解Test-Time Training (TTT)，并在此基础上促进了模型结构简化和提高了效率，对AI领域有较强的理论和实践价值。",
+      "arxiv_id": "2602.21204v1",
+      "abs_url": "https://arxiv.org/abs/2602.21204v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21204v1.pdf"
+    },
+    {
+      "title": "Squint: Fast Visual Reinforcement Learning for Sim-to-Real Robotics",
+      "topic": "多模态与感知",
+      "score": 81,
+      "translated_zh": "该研究在机器人视觉强化学习领域提出新的有效算法，解决了样本效率与实时训练速度的平衡问题，对实际机器人应用有显著意义。",
+      "arxiv_id": "2602.21203v1",
+      "abs_url": "https://arxiv.org/abs/2602.21203v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21203v1.pdf"
+    },
+    {
+      "title": "Multi-Vector Index Compression in Any Modality",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "文章提出的多模态索引压缩技术能够有效提升大规模信息检索的效率和存储空间利用率，符合软件工程领域中提高信息检索系统性能的关键需求。",
+      "arxiv_id": "2602.21202v1",
+      "abs_url": "https://arxiv.org/abs/2602.21202v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21202v1.pdf"
+    },
+    {
+      "title": "Aletheia tackles FirstProof autonomously",
+      "topic": "多模态与感知",
+      "score": 87,
+      "translated_zh": "Aletheia 在 FirstProof 挑战中自动解决高难度数学问题，展示了 AI 在数学研究领域的强大应用能力。",
+      "arxiv_id": "2602.21201v1",
+      "abs_url": "https://arxiv.org/abs/2602.21201v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21201v1.pdf"
+    },
+    {
+      "title": "Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs",
+      "topic": "多模态与感知",
+      "score": 85,
+      "translated_zh": "提出了在机器人环境中基于试错的自适应策略，对机器人学习领域具有战略意义，并且实验结果显著优于基线模型。",
+      "arxiv_id": "2602.21198v1",
+      "abs_url": "https://arxiv.org/abs/2602.21198v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21198v1.pdf"
+    },
+    {
+      "title": "Untied Ulysses: Memory-Efficient Context Parallelism via Headwise Chunking",
+      "topic": "模型与学习算法",
+      "score": 89,
+      "translated_zh": "该研究提出的 UPipe 技术显著提高了长序列处理的效率，并减少了大量的激活内存使用，对于大规模 Transformers 模型具有重要意义。",
+      "arxiv_id": "2602.21196v1",
+      "abs_url": "https://arxiv.org/abs/2602.21196v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21196v1.pdf"
+    },
+    {
+      "title": "On Data Engineering for Scaling LLM Terminal Capabilities",
+      "topic": "多模态与感知",
+      "score": 90,
+      "translated_zh": "该研究提供了大语言模型终端能力的关键数据工程实践和数据集，得到了在多个层级模型上显著的性能提升。",
+      "arxiv_id": "2602.21193v1",
+      "abs_url": "https://arxiv.org/abs/2602.21193v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21193v1.pdf"
+    },
+    {
+      "title": "Statistical Query Lower Bounds for Smoothed Agnostic Learning",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "文章针对永久化策略学习的下界复杂性提供了SOTA分析，对领域内理解模型复杂性和优化算法具有重要意义。",
+      "arxiv_id": "2602.21191v1",
+      "abs_url": "https://arxiv.org/abs/2602.21191v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21191v1.pdf"
+    },
+    {
+      "title": "Why Pass@k Optimization Can Degrade Pass@1: Prompt Interference in LLM Post-training",
+      "topic": "模型与学习算法",
+      "score": 80,
+      "translated_zh": "文章揭示了在优化语言模型时，pass@k性能提升与pass@1性能降低间的权衡，具有很强的理论深度和实际应用价值。",
+      "arxiv_id": "2602.21189v1",
+      "abs_url": "https://arxiv.org/abs/2602.21189v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21189v1.pdf"
+    },
+    {
+      "title": "The Diffusion Duality, Chapter II: $Ψ$-Samplers and Efficient Curriculum",
+      "topic": "模型与学习算法",
+      "score": 90,
+      "translated_zh": "提出了改进的采样方法，突破性地改善了离散扩散模型的生成质量和效率，具有划时代的意义。",
+      "arxiv_id": "2602.21185v1",
+      "abs_url": "https://arxiv.org/abs/2602.21185v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.21185v1.pdf"
+    }
+  ]
+}
