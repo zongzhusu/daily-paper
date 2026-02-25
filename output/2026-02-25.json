@@ -1,0 +1,95 @@
+{
+  "date": "2026-02-25",
+  "items": [
+    {
+      "title": "A Very Big Video Reasoning Suite",
+      "topic": "多模态与感知",
+      "score": 85,
+      "translated_zh": "引入了大规模的视频推理数据集VBVR，填补了该领域数据匮乏的问题，推动对视频推理能力的研究。",
+      "arxiv_id": "2602.20159v1",
+      "abs_url": "https://arxiv.org/abs/2602.20159v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20159v1.pdf"
+    },
+    {
+      "title": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+      "topic": "评测、安全与对齐",
+      "score": 80,
+      "translated_zh": "评估了LLM中因技能文件而产生的新安全威胁，相关工作领域与AI和软件工程安全紧密相关，具有极高战略监测价值。",
+      "arxiv_id": "2602.20156v1",
+      "abs_url": "https://arxiv.org/abs/2602.20156v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20156v1.pdf"
+    },
+    {
+      "title": "JUCAL: Jointly Calibrating Aleatoric and Epistemic Uncertainty in Classification Tasks",
+      "topic": "模型与学习算法",
+      "score": 90,
+      "translated_zh": "提出的JUCAL算法能够同时校准模型不确定性和标签噪声，显著提升模型泛化能力，实验表明在多任务上超越SOTA方法，降低NLL和预测集合大小，具有较高的工程和科研价值。",
+      "arxiv_id": "2602.20153v1",
+      "abs_url": "https://arxiv.org/abs/2602.20153v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20153v1.pdf"
+    },
+    {
+      "title": "Behavior Learning (BL): Learning Hierarchical Optimization Structures from Data",
+      "topic": "模型与学习算法",
+      "score": 82,
+      "translated_zh": "提出了一个新的机器学习框架，有助于理解优化问题并广泛应用，codebase具有较好的 GitHub 反响。",
+      "arxiv_id": "2602.20152v1",
+      "abs_url": "https://arxiv.org/abs/2602.20152v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20152v1.pdf"
+    },
+    {
+      "title": "Conformal Risk Control for Non-Monotonic Losses",
+      "topic": "模型与学习算法",
+      "score": 70,
+      "translated_zh": "提供了面向非单调损失的Conformant风险控制理论并应用在多个领域，但缺乏产业应用和具体的性能数据。",
+      "arxiv_id": "2602.20151v1",
+      "abs_url": "https://arxiv.org/abs/2602.20151v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20151v1.pdf"
+    },
+    {
+      "title": "Agentic AI for Scalable and Robust Optical Systems Control",
+      "topic": "模型与学习算法",
+      "score": 88,
+      "translated_zh": "AgentOptics AI框架针对具有战略意义的通信网络领域展示了高度的自动化和任务成功率，为光网络控制提供了新的范式。",
+      "arxiv_id": "2602.20144v1",
+      "abs_url": "https://arxiv.org/abs/2602.20144v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20144v1.pdf"
+    },
+    {
+      "title": "Recurrent Structural Policy Gradient for Partially Observable Mean Field Games",
+      "topic": "模型与学习算法",
+      "score": 82,
+      "translated_zh": "该研究提出了一种新的方法来处理部分可观察的大规模主体博弈问题，通过在算法上实现显著的性能提升，并且推出了支持该方法的开源框架。",
+      "arxiv_id": "2602.20141v1",
+      "abs_url": "https://arxiv.org/abs/2602.20141v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20141v1.pdf"
+    },
+    {
+      "title": "KNIGHT: Knowledge Graph-Driven Multiple-Choice Question Generation with Adaptive Hardness Calibration",
+      "topic": "多模态与感知",
+      "score": 81,
+      "translated_zh": "KNIGHT框架通过知识图谱驱动的MCQ生成解决评估大型语言模型的成本和时间瓶颈，展示了高质量和效率。",
+      "arxiv_id": "2602.20135v1",
+      "abs_url": "https://arxiv.org/abs/2602.20135v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20135v1.pdf"
+    },
+    {
+      "title": "AdaEvolve: Adaptive LLM Driven Zeroth-Order Optimization",
+      "topic": "多模态与感知",
+      "score": 88,
+      "translated_zh": "提出的框架 AdaEvolve 在进化计算中使用适应性策略优化，表现出超越开源基线的性能，特别是在非静态寻优过程中，具有重要的工程意义和广泛应用前景。",
+      "arxiv_id": "2602.20133v1",
+      "abs_url": "https://arxiv.org/abs/2602.20133v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20133v1.pdf"
+    },
+    {
+      "title": "LAD: Learning Advantage Distribution for Reasoning",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "文章提出了一种新的强化学习框架LAD，旨在通过分布匹配替代原有的优势最大化，增加对高优势响应的倾向，同时抑制过度概率增长，提高推理准确性和生成多样性，对大模型尤为关键。",
+      "arxiv_id": "2602.20132v1",
+      "abs_url": "https://arxiv.org/abs/2602.20132v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.20132v1.pdf"
+    }
+  ]
+}
