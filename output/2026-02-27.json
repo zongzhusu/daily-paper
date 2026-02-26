@@ -1,0 +1,95 @@
+{
+  "date": "2026-02-27",
+  "items": [
+    {
+      "title": "Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "此文提出了一个强化多语言大型语言模型（LLM）评估的自动化翻译框架，显著提升了翻译的质量和准确性，对于提高多语言AI开发的鲁棒性和可复现性具有重要价值。",
+      "arxiv_id": "2602.22207v1",
+      "abs_url": "https://arxiv.org/abs/2602.22207v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22207v1.pdf"
+    },
+    {
+      "title": "Off-The-Shelf Image-to-Image Models Are All You Need To Defeat Image Protection Schemes",
+      "topic": "多模态与感知",
+      "score": 85,
+      "translated_zh": "该研究揭示了现有图像保护机制的普遍漏洞，并突出了利用现有的GenAI模型攻击这些保护机制的有效性。",
+      "arxiv_id": "2602.22197v1",
+      "abs_url": "https://arxiv.org/abs/2602.22197v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22197v1.pdf"
+    },
+    {
+      "title": "GUI-Libra: Training Native GUI Agents to Reason and Act with Action-aware Supervision and Partially Verifiable RL",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "该文章提出了针对GUI Agents的独特训练方案，显著提高了任务完成率和准确性，对于提升用户界面自动化处理具有重要意义。",
+      "arxiv_id": "2602.22190v1",
+      "abs_url": "https://arxiv.org/abs/2602.22190v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22190v1.pdf"
+    },
+    {
+      "title": "UC-Secure Star DKG for Non-Exportable Key Shares with VSS-Free Enforcement",
+      "topic": "评测、安全与对齐",
+      "score": 82,
+      "translated_zh": "这项研究在分布式密钥生成领域提出了一种新的UC-secure方案，采用非可导出密钥且无需密码分享，有效地提升了安全性，特别是在多设备阈值钱包应用中具有战略价值。",
+      "arxiv_id": "2602.22187v1",
+      "abs_url": "https://arxiv.org/abs/2602.22187v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22187v1.pdf"
+    },
+    {
+      "title": "LiCQA : A Lightweight Complex Question Answering System",
+      "topic": "多模态与感知",
+      "score": 70,
+      "translated_zh": "LiCQA 是一个针对复杂问题的问答系统，通过无监督的方式显著降低了延迟，并在基准数据上超越了其他SOTA系统。",
+      "arxiv_id": "2602.22182v1",
+      "abs_url": "https://arxiv.org/abs/2602.22182v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22182v1.pdf"
+    },
+    {
+      "title": "DySCO: Dynamic Attention-Scaling Decoding for Long-Context LMs",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "提出了一种新的解码算法DySCO，针对长文本上下文的理解和推理能力提供了显著提升，可广泛应用于现有的语言模型，属于AI/ML领域中的模型和范式突破。",
+      "arxiv_id": "2602.22175v1",
+      "abs_url": "https://arxiv.org/abs/2602.22175v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22175v1.pdf"
+    },
+    {
+      "title": "LLMTailor: A Layer-wise Tailoring Tool for Efficient Checkpointing of Large Language Models",
+      "topic": "模型与学习算法",
+      "score": 90,
+      "translated_zh": "LLMTailor 针对大模型训练中的必要机制——检查点存储——提供了高效的可选策略，减少了存储需求和时间消耗，同时保持模型质量，对AI领域具有战略性价值。",
+      "arxiv_id": "2602.22158v1",
+      "abs_url": "https://arxiv.org/abs/2602.22158v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22158v1.pdf"
+    },
+    {
+      "title": "Dynamic Personality Adaptation in Large Language Models via State Machines",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "此研究提出了一种模型无关的大型语言模型动态个性模拟框架，使用状态机动态调整个性表达，取得了实际应用效果，并展示了个性化对话系统设计的潜力。",
+      "arxiv_id": "2602.22157v1",
+      "abs_url": "https://arxiv.org/abs/2602.22157v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22157v1.pdf"
+    },
+    {
+      "title": "Provable Last-Iterate Convergence for Multi-Objective Safe LLM Alignment via Optimistic Primal-Dual",
+      "topic": "模型与学习算法",
+      "score": 87,
+      "translated_zh": "提出了一个新的算法OPD，不仅优化了多目标安全LLM对齐，而且提供了理论证明支持最终迭代收敛，对RLHF领域是重要突破。",
+      "arxiv_id": "2602.22146v1",
+      "abs_url": "https://arxiv.org/abs/2602.22146v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22146v1.pdf"
+    },
+    {
+      "title": "NoLan: Mitigating Object Hallucinations in Large Vision-Language Models via Dynamic Suppression of Language Priors",
+      "topic": "多模态与感知",
+      "score": 82,
+      "translated_zh": "这项研究针对大型视觉语言模型中的对象幻觉问题提供了一个创新的解决方法，并且在多个不同的任务中取得了显著效果。",
+      "arxiv_id": "2602.22144v1",
+      "abs_url": "https://arxiv.org/abs/2602.22144v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.22144v1.pdf"
+    }
+  ]
+}
