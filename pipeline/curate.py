@@ -21,8 +21,9 @@ def normalize_entry(item: dict[str, Any]) -> Optional[dict[str, Any]]:
     if not translated:
         return None
 
-    if len(translated) > 300:
-        translated = translated[:297] + "..."
+    # Keep Markdown formatting for web rendering; cap length to avoid overly long cards.
+    if len(translated) > 900:
+        translated = translated[:897] + "..."
 
     out = {
         "title": title,

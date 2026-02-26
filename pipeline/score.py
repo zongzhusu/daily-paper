@@ -49,6 +49,11 @@ def score_items(collected_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     # daily-report internals expect cwd at project root.
     os.chdir("/root/.openclaw/projects/daily-report")
 
+    # daily-paper wants a stricter default threshold than daily-report.
+    # NOTE: ContentProcessor reads SCORE_THRESHOLD at init time.
+    paper_threshold = int(os.getenv("DAILY_PAPER_SCORE_THRESHOLD", "85"))
+    os.environ["SCORE_THRESHOLD"] = str(paper_threshold)
+
     processor = ContentProcessor()
 
     max_items = int(os.getenv("DAILY_PAPER_MAX_ITEMS", "30"))
@@ -103,10 +108,11 @@ def score_items(collected_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             item["second_score"] = second_score
             item["score"] = final_score
 
-            # Use reasoning as short Chinese summary; cap length.
-            zh = str(r2.get("reasoning") or "").strip()
-            if len(zh) > 300:
-                zh = zh[:297] + "..."
+            # Prefer structured Chinese summary (Markdown, multi-line). Fallback to reasoning.
+            zh = str(r2.get("summary_zh") or r2.get("reasoning") or "").strip()
+            # Keep formatting; cap length to avoid breaking the page layout.
+            if len(zh) > 900:
+                zh = zh[:897] + "..."
             item["translated_zh"] = zh
 
         out.append(item)

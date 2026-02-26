@@ -22,6 +22,28 @@ function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
+function escapeHtml(input) {
+  return String(input)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function renderSummary(markdownText) {
+  if (!markdownText) {
+    return "";
+  }
+
+  // We only support a tiny subset of Markdown for safety:
+  // - **bold**
+  // - newline -> <br/>
+  const escaped = escapeHtml(markdownText);
+  const bolded = escaped.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  return bolded.replace(/\n/g, "<br/>");
+}
+
 function brandForMode(mode) {
   if (mode === "news") {
     return {
@@ -180,7 +202,7 @@ function renderItems(items) {
         <article class="border border-gray-200 rounded-xl p-4 bg-white">
           <h2 class="text-lg font-semibold text-gray-900">${index + 1}. ${item.title}</h2>
           <p class="text-sm text-gray-500 mt-1">主题: ${item.topic} | 评分: ${item.score}</p>
-          <p class="text-sm text-gray-700 mt-3 leading-6">${item.summary}</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6">${renderSummary(item.summary)}</div>
           <p class="text-sm mt-3">${links}</p>
         </article>
       `;
