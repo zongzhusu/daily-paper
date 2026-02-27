@@ -2,21 +2,21 @@
   "date": "2026-02-26",
   "items": [
     {
-      "title": "Modality Collapse as Mismatched Decoding: Information-Theoretic Limits of Multimodal LLMs",
-      "topic": "多模态与感知",
+      "title": "DyGnROLE: Modeling Asymmetry in Dynamic Graphs with Node-Role-Oriented Latent Encoding",
+      "topic": "模型与学习算法",
       "score": 85,
-      "translated_zh": "**问题**：多模态大型语言模型无法充分利用非文本输入信息。\n**解法**：提出了解码器对非文本信息使用限制的信息论分析。\n**效果**：去除64-71%模态特定方差可改善解码器损失，情绪可访问性提高了7.5%。\n**价值**：明确指出了多模态模型的改进方向和潜在解决方案，具有实践指导意义。\n**影响**：有助于提升多模态大模型的实际应用效果和拓展其应用场景。",
-      "arxiv_id": "2602.23136v1",
-      "abs_url": "https://arxiv.org/abs/2602.23136v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.23136v1.pdf",
-      "published_at": "2026-02-26T15:52:48Z",
+      "translated_zh": "**问题**：现有动态图架构在处理源节点和目标节点时存在角色不明确的限制。\n**解法**：DyGnROLE采用基于Transformer的架构，明确地区分源节点和目标节点的表示。\n**效果**：预训练目标Temporal Contrastive Link Prediction (TCLP)使用完整的未标记交互历史编码信息结构偏差，使模型在低标签情况下也能学习角色特定的表示，并且在未来边缘分类评估中明显优于多套SOTA基线。\n**价值**：提供了动态图学习中的角色意识建模有效策略，对增强模型的表示能力有重要意义。\n**影响**：该策略适用于需要明确节点角色的一系列动态图学习任务。",
+      "arxiv_id": "2602.23135v1",
+      "abs_url": "https://arxiv.org/abs/2602.23135v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23135v1.pdf",
+      "published_at": "2026-02-26T15:51:51Z",
       "published_date": "2026-02-26"
     },
     {
       "title": "Learning Physical Operators using Neural Operators",
       "topic": "模型与学习算法",
       "score": 85,
-      "translated_zh": "**问题**：现有的神经算子模型在解决偏微分方程时泛化能力弱，且受训练分布和时间离散化的限制。\n**解法**：工作提出了一个混合专家架构，使用算子分裂方法分解PDEs，分别训练非线性算子的神经算子，并用固定差分卷积近似线性算子。\n**效果**：该方法在不可压缩和可压缩的Navier-Stokes方程上展示了优于传统方法的收敛性和泛化性能。\n**价值**：该方法提供了更高泛化能力的模型，并可解释、验证其行为与已知物理定律。\n**影响**：适用于需要解决复杂的物理问题的工程和科研场景。",
+      "translated_zh": "**问题**：现有神经算子模型在通用性和固定时间离散化方面的局限性。\n**解法**：将偏微分方程通过操作分割方法分解，分别训练神经算子学习非线性物理算子，并近似线性算子。\n**效果**：在不可压缩和可压缩Navier-Stokes方程上，展现了更好的收敛性和对未见过物理现象的优越性能表现。\n**价值**：提供了可以用于连续时间预测的新方法，并且在参数效率和可解释性上具有优势。\n**影响**：对连续时间预测算法有潜在改进，可能影响到物理模拟和计算流体动力学领域。",
       "arxiv_id": "2602.23113v1",
       "abs_url": "https://arxiv.org/abs/2602.23113v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23113v1.pdf",
@@ -27,7 +27,7 @@
       "title": "PRAC: Principal-Random Subspace for LLM Activation Compression and Memory-Efficient Training",
       "topic": "模型与学习算法",
       "score": 87,
-      "translated_zh": "**问题**：大规模语言模型训练中激活成为主要内存瓶颈\n**解法**：提出Principal-Random Subspace分解激活，包含主成分子空间和随机子空间两部分\n**效果**：实现高达36%的总内存降低，性能几乎无退化\n**价值**：提供了一种新的高效LLM激活压缩方法，对缓解内存瓶颈有实际应用价值\n**影响**：适用于大批量LLM预训练和微调任务，对内存和计算效率有积极影响",
+      "translated_zh": "**问题**：大型批训练LLM面临内存瓶颈激活问题\n**解法**：提出Principal-Random Subspace方法，通过SVD和随机空间分解激活\n**效果**：实现高达36%的总内存减少，几乎无性能损失\n**价值**：提供一种有效的激活压缩方法，对深度学习训练和部署有潜在作用\n**影响**：适用于需要大规模模型训练的场景，如云计算和高性能计算",
       "arxiv_id": "2602.23111v1",
       "abs_url": "https://arxiv.org/abs/2602.23111v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23111v1.pdf",
@@ -38,22 +38,11 @@
       "title": "Enhancing CVRP Solver through LLM-driven Automatic Heuristic Design",
       "topic": "模型与学习算法",
       "score": 89,
-      "translated_zh": "**问题**：CVRP是车辆路径优化中的基本组合优化挑战，大规模实例仍面临显著计算挑战。\n**解法**：提出利用大型语言模型动态生成启发式方法的Adaptive Iterated Local Search算法。\n**效果**：在CVRPLib大规模基准测试中，对10个实例中的8个提出了新的最优解。\n**价值**：提供了可复用的启发式方法生成技术，对于解决组合优化问题具有实践指导意义。\n**影响**：有助于提升车辆路径优化算法的表现，对物流、配送等行业具有潜在应用价值。",
+      "translated_zh": "**问题**：大规模CVRP问题求解效率低。\n**解法**：提出了利用LLM动态生成和优化启发式算法的新方法AILS-AHD。\n**效果**：在CVRPLib大规模基准测试中，新解法优于多个SOTA求解器，为其中8个实例找到了新的最佳解。\n**价值**：为CVRP问题求解提供了全新的高性能方法和工具，可以显著提升物流路线优化的效率和效果。\n**影响**：对需要高效解决大规模CVRP问题的物流运输领域有重要意义，具有广泛的应用前景。",
       "arxiv_id": "2602.23092v1",
       "abs_url": "https://arxiv.org/abs/2602.23092v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23092v1.pdf",
       "published_at": "2026-02-26T15:12:23Z",
-      "published_date": "2026-02-26"
-    },
-    {
-      "title": "LLM-Powered Silent Bug Fuzzing in Deep Learning Libraries via Versatile and Controlled Bug Transfer",
-      "topic": "模型与学习算法",
-      "score": 87,
-      "translated_zh": "**问题**：深度学习库中的静默错误难以检测，存在严重安全风险。\n**解法**：使用大型语言模型（LLM）从历史问题中提取上下文感知的错误模式，匹配语义相关的API，并合成带自定义验证器的测试用例。\n**效果**：发现79个未知bug（12个已确认为CVEs），证明了其迁移DL图书馆错误检测能力的有效性和通用性。\n**价值**：提供了一种检测深度学习库中静默错误的新方法，可以直接转化为实际的安全性提升。\n**影响**：对提升深度学习库的安全测试具有重要影响，适用于多种主流深度学习库。",
-      "arxiv_id": "2602.23065v1",
-      "abs_url": "https://arxiv.org/abs/2602.23065v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.23065v1.pdf",
-      "published_at": "2026-02-26T14:53:26Z",
       "published_date": "2026-02-26"
     }
   ]
