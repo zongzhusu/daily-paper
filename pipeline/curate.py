@@ -5,6 +5,7 @@ Normalize scored items into the compact schema used by the site generator.
 
 from __future__ import annotations
 
+import os
 from typing import Any, Optional
 
 
@@ -25,10 +26,17 @@ def normalize_entry(item: dict[str, Any]) -> Optional[dict[str, Any]]:
     if len(translated) > 900:
         translated = translated[:897] + "..."
 
+    score = int(item.get("score") or item.get("second_score") or item.get("first_score") or 0)
+
+    # Final filter threshold: user-facing selection (default 85).
+    score_threshold = int(os.getenv("DAILY_PAPER_SCORE_THRESHOLD", "85"))
+    if score < score_threshold:
+        return None
+
     out = {
         "title": title,
         "topic": str(item.get("topic") or "").strip() or "未分类",
-        "score": int(item.get("score") or item.get("second_score") or item.get("first_score") or 0),
+        "score": score,
         "translated_zh": translated,
         "arxiv_id": arxiv_id,
         "abs_url": item.get("abs_url") or f"https://arxiv.org/abs/{arxiv_id}",
