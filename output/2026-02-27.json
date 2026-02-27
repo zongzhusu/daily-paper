@@ -5,7 +5,7 @@
       "title": "Model Agreement via Anchoring",
       "topic": "模型与学习算法",
       "score": 88,
-      "translated_zh": "**问题**：如何有效控制机器学习模型间的预测分歧。\n**解法**：提出基于模型平均的锚定技术，证明四种常见算法的模型分歧界限。\n**效果**：模型分歧可随模型堆叠数量、迭代次数等参数调整趋于零。\n**价值**：该技术可直接应用于现有训练方法，指导模型训练过程以降低模型间分歧，提高模型的一致性和泛化能力。\n**影响**：适用于多种机器学习场景，提升模型的预测性能和泛化能力。",
+      "translated_zh": "**问题**：机器学习模型在预测任务中存在不确定性和不一致性。\n**解法**：提出一种基于锚定平均模型的分析框架,可证明并控制模型不一致性。\n**效果**：各项技术分别展示不一致性如何随模型参数变化趋近于零，是理论分析的突破。\n**价值**：为模型不一致性分析提供了新的理论工具,影响对模型泛化能力的理解。\n**影响**：适用于各种常见算法,对提升机器学习模型的可靠性有指导意义。",
       "arxiv_id": "2602.23360v1",
       "abs_url": "https://arxiv.org/abs/2602.23360v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23360v1.pdf",
@@ -13,10 +13,32 @@
       "published_date": "2026-02-27"
     },
     {
+      "title": "A Dataset is Worth 1 MB",
+      "topic": "多模态与感知",
+      "score": 85,
+      "translated_zh": "**问题**：数据集服务器需要分发大量数据，导致通信成本高昂。\n**解法**：提出 Pseudo-Labels as Data (PLADA)，仅传输类标签，无需传输像素数据。\n**效果**：方法可以使传输负载小于 1 MB，同时保持高分类准确率。\n**价值**：解决了在资源受限环境中的数据传输问题，具有实际应用价值。\n**影响**：适用于需要高效数据传输的场景，如边缘计算和跨地域数据同步。",
+      "arxiv_id": "2602.23358v1",
+      "abs_url": "https://arxiv.org/abs/2602.23358v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23358v1.pdf",
+      "published_at": "2026-02-26T18:59:03Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "SOTAlign: Semi-Supervised Alignment of Unimodal Vision and Language Models via Optimal Transport",
+      "topic": "模型与学习算法",
+      "score": 87,
+      "translated_zh": "**问题**：现有半监督视觉语言模型对齐方法依赖大量配对样本，训练成本高。\n**解法**：提出SOTAlign框架，两阶段优化，先用少量配对数据恢复粗略对齐，再借助最优传输在未配对样本上细化对齐。\n**效果**：在跨数据集和编码器的情况下，显著超越强化学习和半监督基线。\n**价值**：提供了一种无需大量配对样本的模型对齐新方法，实用性强。\n**影响**：适用于需要在半监督设置下优化跨模态模型对齐的应用场景。",
+      "arxiv_id": "2602.23353v1",
+      "abs_url": "https://arxiv.org/abs/2602.23353v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23353v1.pdf",
+      "published_at": "2026-02-26T18:55:06Z",
+      "published_date": "2026-02-27"
+    },
+    {
       "title": "FlashOptim: Optimizers for Memory Efficient Training",
       "topic": "模型与学习算法",
       "score": 85,
-      "translated_zh": "**问题**：大模型训练需要大量内存，限制了研究人员的使用能力\n**解法**：FlashOptim通过改进权重拆分和设计压缩函数减少内存使用\n**效果**：内存从16字节降至7字节参数，减少超过50%（数字）\n**价值**：内存需求大幅下降，提高了大规模模型训练的可行性和可操作性\n**影响**：适用于需要大规模模型训练但内存受限的场景",
+      "translated_zh": "**问题**：传统的混合精度训练因内存需求过高不适合资源有限的研究团队。\n**解法**：通过改进权重分割和设计压缩函数来优化内存使用。\n**效果**：FlashOptim 可将 AdamW 每参数内存从 16 字节降至 7 字节，减少了 56.25%（未给出具体数字，给出了百分比下降）。\n**价值**：该优化可以减少训练大模型时的内存需求，使研究和实践更加高效。\n**影响**：特别适合有资源限制的环境，对需要进行大型模型训练的场景产生积极影响。",
       "arxiv_id": "2602.23349v1",
       "abs_url": "https://arxiv.org/abs/2602.23349v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23349v1.pdf",
@@ -24,10 +46,21 @@
       "published_date": "2026-02-27"
     },
     {
+      "title": "AlayaLaser: Efficient Index Layout and Search Strategy for Large-scale High-dimensional Vector Similarity Search",
+      "topic": "模型与学习算法",
+      "score": 86,
+      "translated_zh": "**问题**：大规模高维向量检索性能受限于计算而非I/O。\n**解法**：提出了AlayaLaser，一种有效利用SIMD指令的新型在磁盘图基础索引布局。\n**效果**：AlayaLaser的性能超越了其他在磁盘图基础索引系统，甚至和内存索引系统相比也有优越性。\n**价值**：AlayaLaser提供了可用于大规模高维数据检索的高效索引解决方案。\n**影响**：有助于提升AI系统中相似性搜索的速度和效率，尤其是在需处理大量高维数据的应用中。",
+      "arxiv_id": "2602.23342v1",
+      "abs_url": "https://arxiv.org/abs/2602.23342v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23342v1.pdf",
+      "published_at": "2026-02-26T18:48:29Z",
+      "published_date": "2026-02-27"
+    },
+    {
       "title": "Differentiable Zero-One Loss via Hypersimplex Projections",
       "topic": "模型与学习算法",
-      "score": 88,
-      "translated_zh": "**问题**：分类任务中零一损失虽然性能高，但因其非可微性不能使用梯度优化。\n**解法**：通过约束优化框架构建了一个增强的n维超单纯形投影，得到了 Soft-Binary-Argmax 算子。\n**效果**：实验中实现大批量训练下显著提升泛化能力，缩小了大批量训练传统性能差异。\n**价值**：为二分类和多分类学习系统提供了新的不同可微化方法，提高了模型的决策质量。\n**影响**：适用于需要高分类准确性的场景，有望提升深度学习模型的实际应用效果。",
+      "score": 87,
+      "translated_zh": "**问题**：机器学习中零一损失不可微分，导致梯度优化不兼容。\n**解法**：构建了一个平滑的、保持顺序的n,k维超单纯形投影方法，命名为Soft-Binary-Argmax。\n**效果**：在大规模批训练下实现了泛化性能的显著提升，缩小了传统大批量训练中观察到的性能差距。\n**价值**：它提供了一种增强模型泛化能力的新方法，可直接转化为决策或行动。\n**影响**：适用于需要提升分类性能的机器学习系统，有潜力改变现有的模型设计和优化流程。",
       "arxiv_id": "2602.23336v1",
       "abs_url": "https://arxiv.org/abs/2602.23336v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23336v1.pdf",
@@ -35,10 +68,21 @@
       "published_date": "2026-02-27"
     },
     {
+      "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "**问题**：主流多智能体系统模拟金融分析师和经理角色，常依赖抽象指令导致实际工作流细节被忽略。\n**解法**：提出一个将投资分析明确分解为细粒度任务的多智能体LLM交易框架。\n**效果**：风险调整后回报较粗粒度设计显著提升（具体数字未给出）。\n**价值**：为实际设置中LLM交易系统的代理结构和任务配置设计提供了信息增量。\n**影响**：有助于更透明且表现更佳的金融交易系统设计。",
+      "arxiv_id": "2602.23330v1",
+      "abs_url": "https://arxiv.org/abs/2602.23330v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23330v1.pdf",
+      "published_at": "2026-02-26T18:37:36Z",
+      "published_date": "2026-02-27"
+    },
+    {
       "title": "LLM Novice Uplift on Dual-Use, In Silico Biology Tasks",
       "topic": "多模态与感知",
       "score": 87,
-      "translated_zh": "**问题**：LLMs能否显著提高非专业人员解决生物安全相关任务的能力。\n**解法**：进行了多模型、多基准的人类提升研究，比较有LLM和只有互联网资源的新手用户表现。\n**效果**：有LLM的新手用户的准确度是只有互联网资源用户的4.16倍（95% CI [2.63, 6.87]）。\n**价值**：凸显了在生物学任务上，LLMs可以大幅提升新手用户的能力，这些任务之前通常需要受过训练的人员才能完成。\n**影响**：强调了同时进行交互式提升评估与传统基准测试的必要性。",
+      "translated_zh": "**问题**：LLMs是否能使普通用户在生物学任务上超越仅使用互联网的专业人士。\n**解法**：对AI辅助和非AI辅助的新手用户进行生物安全相关任务对比实验。\n**效果**：LLM辅助的新手准确率是普通新手的4.16倍（95% CI [2.63, 6.87]）。\n**价值**：展示了LLMs在减轻专业知识门槛和促进科学进步方面的潜力。\n**影响**：对生物技术可访问性、教育和安全政策可能产生长远影响。",
       "arxiv_id": "2602.23329v1",
       "abs_url": "https://arxiv.org/abs/2602.23329v1",
       "pdf_url": "https://arxiv.org/pdf/2602.23329v1.pdf",
