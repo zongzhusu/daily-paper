@@ -53,10 +53,49 @@
     </div>
   </header>
   <div class="px-5 py-3 text-sm text-gray-500 border-b border-gray-100">
-    0篇论文
+    5篇论文
   </div>
   <div class="p-5 space-y-4">
-    <div class="rounded-lg border border-dashed border-gray-300 p-6 text-sm text-gray-500">No items for this date.</div>
+    
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">1. Modality Collapse as Mismatched Decoding: Information-Theoretic Limits of Multimodal LLMs</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 多模态与感知 | 评分: 85 | 发表: 2026-02-26</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：多模态大型语言模型无法充分利用非文本输入信息。<br/><strong>解法</strong>：提出了解码器对非文本信息使用限制的信息论分析。<br/><strong>效果</strong>：去除64-71%模态特定方差可改善解码器损失，情绪可访问性提高了7.5%。<br/><strong>价值</strong>：明确指出了多模态模型的改进方向和潜在解决方案，具有实践指导意义。<br/><strong>影响</strong>：有助于提升多模态大模型的实际应用效果和拓展其应用场景。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23136v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23136v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">2. Learning Physical Operators using Neural Operators</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 85 | 发表: 2026-02-26</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：现有的神经算子模型在解决偏微分方程时泛化能力弱，且受训练分布和时间离散化的限制。<br/><strong>解法</strong>：工作提出了一个混合专家架构，使用算子分裂方法分解PDEs，分别训练非线性算子的神经算子，并用固定差分卷积近似线性算子。<br/><strong>效果</strong>：该方法在不可压缩和可压缩的Navier-Stokes方程上展示了优于传统方法的收敛性和泛化性能。<br/><strong>价值</strong>：该方法提供了更高泛化能力的模型，并可解释、验证其行为与已知物理定律。<br/><strong>影响</strong>：适用于需要解决复杂的物理问题的工程和科研场景。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23113v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23113v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">3. PRAC: Principal-Random Subspace for LLM Activation Compression and Memory-Efficient Training</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 87 | 发表: 2026-02-26</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：大规模语言模型训练中激活成为主要内存瓶颈<br/><strong>解法</strong>：提出Principal-Random Subspace分解激活，包含主成分子空间和随机子空间两部分<br/><strong>效果</strong>：实现高达36%的总内存降低，性能几乎无退化<br/><strong>价值</strong>：提供了一种新的高效LLM激活压缩方法，对缓解内存瓶颈有实际应用价值<br/><strong>影响</strong>：适用于大批量LLM预训练和微调任务，对内存和计算效率有积极影响</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23111v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23111v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">4. Enhancing CVRP Solver through LLM-driven Automatic Heuristic Design</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 89 | 发表: 2026-02-26</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：CVRP是车辆路径优化中的基本组合优化挑战，大规模实例仍面临显著计算挑战。<br/><strong>解法</strong>：提出利用大型语言模型动态生成启发式方法的Adaptive Iterated Local Search算法。<br/><strong>效果</strong>：在CVRPLib大规模基准测试中，对10个实例中的8个提出了新的最优解。<br/><strong>价值</strong>：提供了可复用的启发式方法生成技术，对于解决组合优化问题具有实践指导意义。<br/><strong>影响</strong>：有助于提升车辆路径优化算法的表现，对物流、配送等行业具有潜在应用价值。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23092v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23092v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">5. LLM-Powered Silent Bug Fuzzing in Deep Learning Libraries via Versatile and Controlled Bug Transfer</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 87 | 发表: 2026-02-26</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：深度学习库中的静默错误难以检测，存在严重安全风险。<br/><strong>解法</strong>：使用大型语言模型（LLM）从历史问题中提取上下文感知的错误模式，匹配语义相关的API，并合成带自定义验证器的测试用例。<br/><strong>效果</strong>：发现79个未知bug（12个已确认为CVEs），证明了其迁移DL图书馆错误检测能力的有效性和通用性。<br/><strong>价值</strong>：提供了一种检测深度学习库中静默错误的新方法，可以直接转化为实际的安全性提升。<br/><strong>影响</strong>：对提升深度学习库的安全测试具有重要影响，适用于多种主流深度学习库。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23065v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23065v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
   </div>
 </section>
 
