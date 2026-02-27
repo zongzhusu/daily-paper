@@ -75,10 +75,15 @@ def score_items(collected_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         scored_stage1.append(enriched)
 
     # pick candidates for round-2
-    threshold = int(getattr(processor, "score_threshold", 50))
-    candidates = [x for x in scored_stage1 if int(x.get("first_score") or 0) >= threshold]
+    # NOTE: round-2 is used to generate structured zh summary; do NOT couple it to the final display threshold.
+    round2_min_first = int(os.getenv("DAILY_PAPER_ROUND2_MIN_FIRST_SCORE", "50"))
+    candidates = [x for x in scored_stage1 if int(x.get("first_score") or 0) >= round2_min_first]
     candidates.sort(key=lambda x: int(x.get("first_score") or 0), reverse=True)
     candidates = candidates[: max(0, topk)]
+
+    # Fallback: if nothing passes the min, still score top-k to avoid empty outputs.
+    if not candidates:
+        candidates = sorted(scored_stage1, key=lambda x: int(x.get("first_score") or 0), reverse=True)[: max(0, topk)]
 
     # build lookup for which items get round2
     round2_ids = set()

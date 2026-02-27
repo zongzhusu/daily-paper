@@ -33,6 +33,9 @@ def normalize_entry(item: dict[str, Any]) -> Optional[dict[str, Any]]:
         "arxiv_id": arxiv_id,
         "abs_url": item.get("abs_url") or f"https://arxiv.org/abs/{arxiv_id}",
         "pdf_url": item.get("pdf_url") or f"https://arxiv.org/pdf/{arxiv_id}.pdf",
+        # For debugging / UX: show published date (normalized by collector timezone).
+        "published_at": item.get("publishedAt") or item.get("published_at"),
+        "published_date": item.get("publishedDate") or item.get("published_date"),
     }
 
     return out

@@ -85,7 +85,12 @@ def run_daily(run_date: str, *, mode: str = "paper") -> Path:
     collect_req = {
         "mode": "paper_v0",
         "config": {},
-        "run": {"maxItems": int(os.getenv("DAILY_PAPER_MAX_ITEMS", "30"))},
+        "run": {
+            "maxItems": int(os.getenv("DAILY_PAPER_MAX_ITEMS", "30")),
+            # Ensure papers match the requested run_date in local timezone.
+            "date": run_date,
+            "timeZone": os.getenv("DAILY_PAPER_TIMEZONE", "Asia/Shanghai"),
+        },
     }
     collect_req_path = paths.tmp_dir / f"collect-{run_date}.json"
     collect_out_path = paths.tmp_dir / f"collect-result-{run_date}.json"

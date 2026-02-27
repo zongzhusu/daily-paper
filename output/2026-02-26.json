@@ -1,14 +1,4 @@
 {
   "date": "2026-02-26",
-  "items": [
-    {
-      "title": "Off-The-Shelf Image-to-Image Models Are All You Need To Defeat Image Protection Schemes",
-      "topic": "多模态与感知",
-      "score": 88,
-      "translated_zh": "**问题**：现有图像保护方案无法有效防止未经授权的使用。\n**解法**：利用现成的图像到图像的 AI 模型，通过文本提示去噪，移除保护扰动。\n**效果**: 在8个案例研究中，不仅绕过了保护机制，还超过了现有专门攻击的性能。\n**价值**：提供了一种新的防御机制评估方法，强调现有方案的不安全性，促使开发更加健壮的防御。\n**影响**：对图像保护领域有深远影响，可能改变未来保护机制的设计方向。",
-      "arxiv_id": "2602.22197v1",
-      "abs_url": "https://arxiv.org/abs/2602.22197v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.22197v1.pdf"
-    }
-  ]
+  "items": []
 }
