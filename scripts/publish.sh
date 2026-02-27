@@ -4,6 +4,7 @@ set -euo pipefail
 PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 MODE="paper"
 DRY_RUN="false"
+PUBLISH_DATE=""
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -14,6 +15,10 @@ while [[ $# -gt 0 ]]; do
     --dry-run)
       DRY_RUN="true"
       shift
+      ;;
+    --date)
+      PUBLISH_DATE="${2:-}"
+      shift 2
       ;;
     *)
       shift
@@ -52,5 +57,8 @@ echo "[daily-paper] publish complete (git push done)"
 # This keeps the "web view" in the daily-report Pages project updated.
 if [[ "${DAILY_PAPER_PUBLISH_TO_DAILY_REPORT:-0}" == "1" ]]; then
   echo "[daily-paper] publish to daily-report (papers)"
-  bash scripts/publish-to-daily-report.sh "$(TZ=Asia/Shanghai date +%F)"
+  if [[ -z "$PUBLISH_DATE" ]]; then
+    PUBLISH_DATE="$(TZ=Asia/Shanghai date +%F)"
+  fi
+  bash scripts/publish-to-daily-report.sh "$PUBLISH_DATE"
 fi
