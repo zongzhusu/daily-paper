@@ -45,13 +45,11 @@ git add output/*.json output/site
 
 if git diff --cached --quiet; then
   echo "[daily-paper] no site changes to publish"
-  exit 0
+else
+  git commit -m "chore: publish daily-paper site (${MODE})"
+  git push
+  echo "[daily-paper] publish complete (git push done)"
 fi
-
-git commit -m "chore: publish daily-paper site (${MODE})"
-git push
-
-echo "[daily-paper] publish complete (git push done)"
 
 # Optional: also publish into daily-report (Cloudflare Pages site) if available.
 # This keeps the "web view" in the daily-report Pages project updated.
