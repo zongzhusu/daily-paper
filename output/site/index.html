@@ -53,10 +53,73 @@
     </div>
   </header>
   <div class="px-5 py-3 text-sm text-gray-500 border-b border-gray-100">
-    0篇论文
+    8篇论文
   </div>
   <div class="p-5 space-y-4">
-    <div class="rounded-lg border border-dashed border-gray-300 p-6 text-sm text-gray-500">No items for this date.</div>
+    
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">1. Model Agreement via Anchoring</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 86 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：机器学习模型在独立样本上预测不一致的问题。<br/><strong>解法</strong>：通过锚定分析两个模型的平均值来减少独立模型间不一致性。<br/><strong>效果</strong>：对四种算法展示了如何将不一致性降到零，示例中包括最大优化树深度和模型堆叠数量。<br/><strong>价值</strong>：提供了控制模型预测不一致性的理论和实践方法，具有方法论上的创新意义。<br/><strong>影响</strong>：可以改进实际训练过程中的模型一致性，适用于多种机器学习算法。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23360v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23360v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">2. SeeThrough3D: Occlusion Aware 3D Control in Text-to-Image Generation</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 多模态与感知 | 评分: 89 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：现有文本到图像生成模型无法精确建模对象间的遮挡关系，生成的部分遮挡物体深度和尺度不一致。<br/><strong>解法</strong>：提出SeeThrough3D模型，引入透明3D盒子表示和视角渲染，显式建模物体遮挡；使用掩码自注意力关联文本描述，避免属性混合。<br/><strong>效果</strong>：模型能准确生成多对象图像，未给出具体数字；生成图像具有逼真遮挡和一致相机控制。<br/><strong>价值</strong>：模型针对3D布局条件生成提供了一种新的遮挡感知表示和生成方法，有助于提升生成图像的真实感。<br/><strong>影响</strong>：该模型可推广到未见过的物体类别，适用于需要精确3D布局控制的场景，有潜力应用于虚拟现实等领域。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23359v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23359v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">3. SOTAlign: Semi-Supervised Alignment of Unimodal Vision and Language Models via Optimal Transport</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 85 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：传统多模态模型对齐需要大量的带标记图像-文本对，难以获取和计算成本高。<br/><strong>解法</strong>：提出 SOTAlign 框架，先利用少量配对样本对齐模型，再通过最优传输方法在大量未配对数据上进行精细对齐。<br/><strong>效果</strong>：方法在多个数据集上显著优于有监督和半监督基线，但具体数字未给出。<br/><strong>价值</strong>：提供了一种节省带标记数据、利用未配对数据的新思路，对多模态模型训练具有重要参考价值。<br/><strong>影响</strong>：适用于多模态学习、跨模态迁移等领域，有助于推动相关模型的训练和发展。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23353v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23353v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">4. FlashOptim: Optimizers for Memory Efficient Training</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 85 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：训练神经网络时，优化器状态变量和梯度要求大容量的加速器内存，限制了模型规模。<br/><strong>解法</strong>：FlashOptim通过改进主权重分割和设计压缩函数来减少内存需求。<br/><strong>效果</strong>：每个参数的内存需求从16字节减少到7字节，AdamW的内存需求减少了约50%。<br/><strong>价值</strong>：FlashOptim提供一种内存高效训练的强大工具和方法。<br/><strong>影响</strong>：适用于需要减少内存占用同时保持模型质量的深度学习科研和工业应用场景。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23349v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23349v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">5. AlayaLaser: Efficient Index Layout and Search Strategy for Large-scale High-dimensional Vector Similarity Search</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 85 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：大规模、高维向量检索的I/O成本高，性能受限。<br/><strong>解法</strong>：提出了AlayaLaser系统，通过新的数据布局和优化技术，降低计算瓶颈。<br/><strong>效果</strong>：AlayaLaser的性能超过现有系统，匹配甚至超越内存索引系统性能。<br/><strong>价值</strong>：为大数据量、高维度的向量检索提供了效率更高的解决方案，具有实际应用价值。<br/><strong>影响</strong>：适用于需要快速、大规模向量检索的场景，提升数据处理性能。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23342v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23342v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">6. Differentiable Zero-One Loss via Hypersimplex Projections</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 85 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：传统零一损失在分类任务中被看作最优，但与梯度优化不兼容。<br/><strong>解法</strong>：提出新的可微近似方法，通过约束优化框架在n,k维超单纯形间进行平滑投影。<br/><strong>效果</strong>：大批量训练下实现泛化能力提升，性能缺口被缩小。<br/><strong>价值</strong>：提供了新的不同微分损失函数适配方法，可复用于多类学习系统。<br/><strong>影响</strong>：适用于大批量机器学习训练，尤其是分类任务。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23336v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23336v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">7. Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: 模型与学习算法 | 评分: 85 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：现存的多智能体系统在金融交易中由于过于抽象的指导导致推理性能下降和决策不透明。<br/><strong>解法</strong>：提出基于细颗粒度任务分解的多智能体LLM交易框架。<br/><strong>效果</strong>：风险调整后的收益比常规设计提高了，且与股票指数低相关性组合优化表现优越。<br/><strong>价值</strong>：为应用LLM智能体于实际交易系统提供了结构和任务配置的设计参考。<br/><strong>影响</strong>：适用于投资分析和交易系统，提高决策质量和系统性能。</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23330v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23330v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
+
+        <article class="border border-gray-200 rounded-xl p-4 bg-white">
+          <h2 class="text-lg font-semibold text-gray-900">8. ParamMem: Augmenting Language Agents with Parametric Reflective Memory</h2>
+          <p class="text-sm text-gray-500 mt-1">主题: Agent与推理范式 | 评分: 89 | 发表: 2026-02-27</p>
+          <div class="text-sm text-gray-700 mt-3 leading-6"><strong>问题</strong>：语言代理在自反射中因输出重复限制推理性能<br/><strong>解法</strong>：提出ParamMem参数记忆模块，通过温度控制采样生成多样化自反射<br/><strong>效果</strong>：在代码生成等多个任务上超过SOTA，样本效率好，支持不同模型尺度之间的弱到强转移<br/><strong>价值</strong>：提供了一种无需外部强力模型辅助即可实现自改进的语言AI记忆增强方法，具有较强的实用性和可复用性<br/><strong>影响</strong>：有望应用于代码生成、数学推理、多跳问答等多种语言AI任务</div>
+          <p class="text-sm mt-3"><a href="https://arxiv.org/abs/2602.23320v1" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">abs</a> | <a href="https://arxiv.org/pdf/2602.23320v1.pdf" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800">pdf</a></p>
+        </article>
+      
   </div>
 </section>
 

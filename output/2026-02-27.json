@@ -1,4 +1,93 @@
 {
   "date": "2026-02-27",
-  "items": []
+  "items": [
+    {
+      "title": "Model Agreement via Anchoring",
+      "topic": "模型与学习算法",
+      "score": 86,
+      "translated_zh": "**问题**：机器学习模型在独立样本上预测不一致的问题。\n**解法**：通过锚定分析两个模型的平均值来减少独立模型间不一致性。\n**效果**：对四种算法展示了如何将不一致性降到零，示例中包括最大优化树深度和模型堆叠数量。\n**价值**：提供了控制模型预测不一致性的理论和实践方法，具有方法论上的创新意义。\n**影响**：可以改进实际训练过程中的模型一致性，适用于多种机器学习算法。",
+      "arxiv_id": "2602.23360v1",
+      "abs_url": "https://arxiv.org/abs/2602.23360v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23360v1.pdf",
+      "published_at": "2026-02-26T18:59:32Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "SeeThrough3D: Occlusion Aware 3D Control in Text-to-Image Generation",
+      "topic": "多模态与感知",
+      "score": 89,
+      "translated_zh": "**问题**：现有文本到图像生成模型无法精确建模对象间的遮挡关系，生成的部分遮挡物体深度和尺度不一致。\n**解法**：提出SeeThrough3D模型，引入透明3D盒子表示和视角渲染，显式建模物体遮挡；使用掩码自注意力关联文本描述，避免属性混合。\n**效果**：模型能准确生成多对象图像，未给出具体数字；生成图像具有逼真遮挡和一致相机控制。\n**价值**：模型针对3D布局条件生成提供了一种新的遮挡感知表示和生成方法，有助于提升生成图像的真实感。\n**影响**：该模型可推广到未见过的物体类别，适用于需要精确3D布局控制的场景，有潜力应用于虚拟现实等领域。",
+      "arxiv_id": "2602.23359v1",
+      "abs_url": "https://arxiv.org/abs/2602.23359v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23359v1.pdf",
+      "published_at": "2026-02-26T18:59:05Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "SOTAlign: Semi-Supervised Alignment of Unimodal Vision and Language Models via Optimal Transport",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "**问题**：传统多模态模型对齐需要大量的带标记图像-文本对，难以获取和计算成本高。\n**解法**：提出 SOTAlign 框架，先利用少量配对样本对齐模型，再通过最优传输方法在大量未配对数据上进行精细对齐。\n**效果**：方法在多个数据集上显著优于有监督和半监督基线，但具体数字未给出。\n**价值**：提供了一种节省带标记数据、利用未配对数据的新思路，对多模态模型训练具有重要参考价值。\n**影响**：适用于多模态学习、跨模态迁移等领域，有助于推动相关模型的训练和发展。",
+      "arxiv_id": "2602.23353v1",
+      "abs_url": "https://arxiv.org/abs/2602.23353v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23353v1.pdf",
+      "published_at": "2026-02-26T18:55:06Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "FlashOptim: Optimizers for Memory Efficient Training",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "**问题**：训练神经网络时，优化器状态变量和梯度要求大容量的加速器内存，限制了模型规模。\n**解法**：FlashOptim通过改进主权重分割和设计压缩函数来减少内存需求。\n**效果**：每个参数的内存需求从16字节减少到7字节，AdamW的内存需求减少了约50%。\n**价值**：FlashOptim提供一种内存高效训练的强大工具和方法。\n**影响**：适用于需要减少内存占用同时保持模型质量的深度学习科研和工业应用场景。",
+      "arxiv_id": "2602.23349v1",
+      "abs_url": "https://arxiv.org/abs/2602.23349v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23349v1.pdf",
+      "published_at": "2026-02-26T18:52:22Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "AlayaLaser: Efficient Index Layout and Search Strategy for Large-scale High-dimensional Vector Similarity Search",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "**问题**：大规模、高维向量检索的I/O成本高，性能受限。\n**解法**：提出了AlayaLaser系统，通过新的数据布局和优化技术，降低计算瓶颈。\n**效果**：AlayaLaser的性能超过现有系统，匹配甚至超越内存索引系统性能。\n**价值**：为大数据量、高维度的向量检索提供了效率更高的解决方案，具有实际应用价值。\n**影响**：适用于需要快速、大规模向量检索的场景，提升数据处理性能。",
+      "arxiv_id": "2602.23342v1",
+      "abs_url": "https://arxiv.org/abs/2602.23342v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23342v1.pdf",
+      "published_at": "2026-02-26T18:48:29Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "Differentiable Zero-One Loss via Hypersimplex Projections",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "**问题**：传统零一损失在分类任务中被看作最优，但与梯度优化不兼容。\n**解法**：提出新的可微近似方法，通过约束优化框架在n,k维超单纯形间进行平滑投影。\n**效果**：大批量训练下实现泛化能力提升，性能缺口被缩小。\n**价值**：提供了新的不同微分损失函数适配方法，可复用于多类学习系统。\n**影响**：适用于大批量机器学习训练，尤其是分类任务。",
+      "arxiv_id": "2602.23336v1",
+      "abs_url": "https://arxiv.org/abs/2602.23336v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23336v1.pdf",
+      "published_at": "2026-02-26T18:41:31Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
+      "topic": "模型与学习算法",
+      "score": 85,
+      "translated_zh": "**问题**：现存的多智能体系统在金融交易中由于过于抽象的指导导致推理性能下降和决策不透明。\n**解法**：提出基于细颗粒度任务分解的多智能体LLM交易框架。\n**效果**：风险调整后的收益比常规设计提高了，且与股票指数低相关性组合优化表现优越。\n**价值**：为应用LLM智能体于实际交易系统提供了结构和任务配置的设计参考。\n**影响**：适用于投资分析和交易系统，提高决策质量和系统性能。",
+      "arxiv_id": "2602.23330v1",
+      "abs_url": "https://arxiv.org/abs/2602.23330v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23330v1.pdf",
+      "published_at": "2026-02-26T18:37:36Z",
+      "published_date": "2026-02-27"
+    },
+    {
+      "title": "ParamMem: Augmenting Language Agents with Parametric Reflective Memory",
+      "topic": "Agent与推理范式",
+      "score": 89,
+      "translated_zh": "**问题**：语言代理在自反射中因输出重复限制推理性能\n**解法**：提出ParamMem参数记忆模块，通过温度控制采样生成多样化自反射\n**效果**：在代码生成等多个任务上超过SOTA，样本效率好，支持不同模型尺度之间的弱到强转移\n**价值**：提供了一种无需外部强力模型辅助即可实现自改进的语言AI记忆增强方法，具有较强的实用性和可复用性\n**影响**：有望应用于代码生成、数学推理、多跳问答等多种语言AI任务",
+      "arxiv_id": "2602.23320v1",
+      "abs_url": "https://arxiv.org/abs/2602.23320v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23320v1.pdf",
+      "published_at": "2026-02-26T18:28:04Z",
+      "published_date": "2026-02-27"
+    }
+  ]
 }
