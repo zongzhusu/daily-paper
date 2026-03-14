@@ -6,7 +6,7 @@ if [[ -z "$DATE" ]]; then
   DATE="$(TZ=Asia/Shanghai date +%F)"
 fi
 
-ROOT="/root/.openclaw/projects"
+ROOT="/root/.openclaw/workspace/projects"
 PAPER_REPO="${ROOT}/daily-paper"
 REPORT_REPO="${ROOT}/daily-report"
 

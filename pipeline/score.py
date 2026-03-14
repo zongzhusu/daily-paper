@@ -22,7 +22,7 @@ from typing import Any
 
 
 def _ensure_daily_report_import() -> None:
-    sys.path.insert(0, "/root/.openclaw/projects/daily-report/pipeline")
+    sys.path.insert(0, "/root/.openclaw/workspace/projects/daily-report/pipeline")
 
 
 _ARXIV_ID_RE = re.compile(r"(\d{4}\.\d{4,5}(?:v\d+)?)")
@@ -47,7 +47,7 @@ def score_items(collected_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     from core.utils import smooth_score  # type: ignore
 
     # daily-report internals expect cwd at project root.
-    os.chdir("/root/.openclaw/projects/daily-report")
+    os.chdir("/root/.openclaw/workspace/projects/daily-report")
 
     # daily-paper wants a stricter default threshold than daily-report.
     # NOTE: ContentProcessor reads SCORE_THRESHOLD at init time.
