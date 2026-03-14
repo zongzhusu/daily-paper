@@ -61,8 +61,10 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
 
-def run_node_json(cmd: list[str], *, cwd: Path, out_path: Path) -> dict[str, Any]:
-    proc = subprocess.run(cmd, cwd=str(cwd), text=True, capture_output=True)
+def run_node_json(
+    cmd: list[str], *, cwd: Path, out_path: Path, env: dict[str, str] | None = None
+) -> dict[str, Any]:
+    proc = subprocess.run(cmd, cwd=str(cwd), env=env, text=True, capture_output=True)
     if proc.returncode != 0 and proc.stdout.strip() == "":
         raise RuntimeError(f"command failed: {' '.join(cmd)}\nexit={proc.returncode}\nstderr:\n{proc.stderr}")
     out_path.write_text(proc.stdout, encoding="utf-8")
@@ -96,10 +98,21 @@ def run_daily(run_date: str, *, mode: str = "paper") -> Path:
     collect_out_path = paths.tmp_dir / f"collect-result-{run_date}.json"
     write_json(collect_req_path, collect_req)
 
+    # Collect papers using the news-collector skill.
+    # IMPORTANT: run with a stable module resolution so cron never fails with missing deps.
+    collector_root = Path("/root/.openclaw/workspace/skills/news-collector")
+    node_env = os.environ.copy()
+    collector_node_modules = str(collector_root / "node_modules")
+    node_env["NODE_PATH"] = (
+        collector_node_modules
+        + (":" + node_env["NODE_PATH"] if node_env.get("NODE_PATH") else "")
+    )
+
     collect_result = run_node_json(
-        ["node", "/root/.openclaw/skills/news-collector/scripts/arxiv_collect.js", "--input", str(collect_req_path)],
-        cwd=root,
+        ["node", "scripts/arxiv_collect.js", "--input", str(collect_req_path)],
+        cwd=collector_root,
         out_path=collect_out_path,
+        env=node_env,
     )
 
     collected_items = collect_result.get("items") or []
