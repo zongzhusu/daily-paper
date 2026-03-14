@@ -13,5 +13,5 @@
 
 ## Output
 
-- Daily markdown: `projects/daily-paper/output/YYYY-MM-DD.md`
-- Static site: `projects/daily-paper/output/site/`
+- Daily markdown: `output/YYYY-MM-DD.md`
+- Static site: `output/site/`

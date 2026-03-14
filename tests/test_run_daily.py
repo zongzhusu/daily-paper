@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def _load_build_plan():
-    mod_path = Path("projects/daily-paper/pipeline/run_daily.py")
+    mod_path = Path("pipeline/run_daily.py")
     spec = importlib.util.spec_from_file_location("run_daily", mod_path)
     assert spec and spec.loader
     module = importlib.util.module_from_spec(spec)

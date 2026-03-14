@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def _load_render_daily_markdown():
-    mod_path = Path("projects/daily-paper/pipeline/render.py")
+    mod_path = Path("pipeline/render.py")
     spec = importlib.util.spec_from_file_location("render", mod_path)
     assert spec and spec.loader
     module = importlib.util.module_from_spec(spec)

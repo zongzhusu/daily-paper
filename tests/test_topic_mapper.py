@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def _load_map_topic():
-    mod_path = Path("projects/daily-paper/pipeline/topic_mapper.py")
+    mod_path = Path("pipeline/topic_mapper.py")
     spec = importlib.util.spec_from_file_location("topic_mapper", mod_path)
     assert spec and spec.loader
     module = importlib.util.module_from_spec(spec)

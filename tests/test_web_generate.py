@@ -4,24 +4,24 @@ import json
 
 
 def _run_generate(*args: str) -> None:
-    cmd = ["node", "projects/daily-paper/web/generate.js", *args]
+    cmd = ["node", "web/generate.js", *args]
     subprocess.run(cmd, check=True)
 
 
 def test_generate_default_mode_uses_paper_brand():
     _run_generate()
-    html = Path("projects/daily-paper/output/site/index.html").read_text(encoding="utf-8")
+    html = Path("output/site/index.html").read_text(encoding="utf-8")
     assert "Daily Paper" in html
 
 
 def test_generate_news_mode_uses_news_brand():
     _run_generate("--mode", "news")
-    html = Path("projects/daily-paper/output/site/index.html").read_text(encoding="utf-8")
+    html = Path("output/site/index.html").read_text(encoding="utf-8")
     assert "Daily News" in html
 
 
 def test_generate_builds_daily_pages_and_archive_from_json():
-    output_dir = Path("projects/daily-paper/output")
+    output_dir = Path("output")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     sample = {
@@ -43,9 +43,9 @@ def test_generate_builds_daily_pages_and_archive_from_json():
 
     _run_generate()
 
-    index_html = Path("projects/daily-paper/output/site/index.html").read_text(encoding="utf-8")
-    day_html = Path("projects/daily-paper/output/site/2026-02-20.html").read_text(encoding="utf-8")
-    archive_html = Path("projects/daily-paper/output/site/archive.html").read_text(encoding="utf-8")
+    index_html = Path("output/site/index.html").read_text(encoding="utf-8")
+    day_html = Path("output/site/2026-02-20.html").read_text(encoding="utf-8")
+    archive_html = Path("output/site/archive.html").read_text(encoding="utf-8")
 
     assert "Chiplet-aware NPU" in index_html
     assert "https://arxiv.org/pdf/2502.00001.pdf" in day_html
@@ -54,7 +54,7 @@ def test_generate_builds_daily_pages_and_archive_from_json():
 
 
 def test_generate_derives_arxiv_links_from_id_and_url():
-    output_dir = Path("projects/daily-paper/output")
+    output_dir = Path("output")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     payload = {
@@ -78,7 +78,7 @@ def test_generate_derives_arxiv_links_from_id_and_url():
 
     _run_generate()
 
-    day_html = Path("projects/daily-paper/output/site/2026-02-18.html").read_text(encoding="utf-8")
+    day_html = Path("output/site/2026-02-18.html").read_text(encoding="utf-8")
     assert "https://arxiv.org/abs/2502.12345" in day_html
     assert "https://arxiv.org/pdf/2502.12345.pdf" in day_html
     assert "https://arxiv.org/abs/2502.54321" in day_html
@@ -86,7 +86,7 @@ def test_generate_derives_arxiv_links_from_id_and_url():
 
 
 def test_archive_groups_by_month_and_shows_totals():
-    output_dir = Path("projects/daily-paper/output")
+    output_dir = Path("output")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     jan = {"date": "2026-01-31", "items": [{"title": "A"}]}
@@ -96,7 +96,7 @@ def test_archive_groups_by_month_and_shows_totals():
 
     _run_generate()
 
-    archive_html = Path("projects/daily-paper/output/site/archive.html").read_text(encoding="utf-8")
+    archive_html = Path("output/site/archive.html").read_text(encoding="utf-8")
     assert "2026年02月" in archive_html
     assert "2026年01月" in archive_html
     assert "共 2 个月" in archive_html

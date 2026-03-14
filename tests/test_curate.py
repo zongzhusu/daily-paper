@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def _load_normalize_entry():
-    mod_path = Path("projects/daily-paper/pipeline/curate.py")
+    mod_path = Path("pipeline/curate.py")
     spec = importlib.util.spec_from_file_location("curate", mod_path)
     assert spec and spec.loader
     module = importlib.util.module_from_spec(spec)
